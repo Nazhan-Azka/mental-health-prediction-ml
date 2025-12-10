@@ -1,0 +1,10 @@
+name: mlflow_project
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: "python modelling.py"
+    parameters:
+      dataset_path: {type: str, default: "namadataset_preprocessing/Mental_Health_and_Social_Media_Balance_No_Outlier.csv"}
+

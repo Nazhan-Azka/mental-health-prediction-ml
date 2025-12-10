@@ -1,0 +1,33 @@
+name: ML Model Training
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  train_model:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniconda-version: 'latest'
+        activate-environment: mlflow_project_env
+        environment-file: conda.yaml
+
+    - name: Install dependencies
+      run: |
+        conda activate mlflow_project_env
+        pip install -r requirements.txt
+
+    - name: Run training script
+      run: |
+        python modelling.py

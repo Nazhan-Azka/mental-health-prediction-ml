@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nazha/OneDrive/Dokumen/Proyek%20Asah_Muhammad%20Nazhan%20Azka_%20ML/Submission%20ML%20Terakhir/Workflow-CI/mlruns/0/3e79e2b3a7144c26863da67ccb1b4f7f/artifacts
+end_time: 1765354730494
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3e79e2b3a7144c26863da67ccb1b4f7f
+run_name: dapper-donkey-892
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765354730323
+status: 3
+tags: []
+user_id: nazhan

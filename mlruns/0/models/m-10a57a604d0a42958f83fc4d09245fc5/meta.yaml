@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/nazha/OneDrive/Dokumen/Proyek%20Asah_Muhammad%20Nazhan%20Azka_%20ML/Submission%20ML%20Terakhir/Workflow-CI/mlruns/0/models/m-10a57a604d0a42958f83fc4d09245fc5/artifacts
+creation_timestamp: 1765354809604
+experiment_id: '0'
+last_updated_timestamp: 1765354824531
+model_id: m-10a57a604d0a42958f83fc4d09245fc5
+model_type: null
+name: model
+source_run_id: b2b47380f3a541a181ccfb6122140e9c
+status: 2
+status_message: null

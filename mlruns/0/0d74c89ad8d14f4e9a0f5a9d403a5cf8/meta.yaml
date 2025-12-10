@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/nazha/OneDrive/Dokumen/Proyek%20Asah_Muhammad%20Nazhan%20Azka_%20ML/Submission%20ML%20Terakhir/Workflow-CI/mlruns/0/0d74c89ad8d14f4e9a0f5a9d403a5cf8/artifacts
+end_time: 1765354645419
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0d74c89ad8d14f4e9a0f5a9d403a5cf8
+run_name: bedecked-crab-757
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765354644957
+status: 3
+tags: []
+user_id: nazhan

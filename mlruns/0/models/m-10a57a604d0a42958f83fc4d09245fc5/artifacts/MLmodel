@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/nazha/OneDrive/Dokumen/Proyek%20Asah_Muhammad%20Nazhan%20Azka_%20ML/Submission%20ML%20Terakhir/Workflow-CI/mlruns/0/models/m-10a57a604d0a42958f83fc4d09245fc5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-10a57a604d0a42958f83fc4d09245fc5
+model_size_bytes: 1719684
+model_uuid: m-10a57a604d0a42958f83fc4d09245fc5
+prompts: null
+run_id: b2b47380f3a541a181ccfb6122140e9c
+utc_time_created: '2025-12-10 08:20:09.715320'
