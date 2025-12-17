@@ -1,36 +1,37 @@
-name: CI Train MLflow Project
+name: ML Model Training
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  train-model:
+  train_model:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Conda environment
-        uses: conda-incubator/setup-miniconda@v2
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v3
         with:
+          miniconda-version: "latest"
           activate-environment: mlflow_project_env
           environment-file: MLProject/conda.yaml
           auto-activate-base: false
 
-      - name: Train model
-        working-directory: MLProject
-        run: conda run -n mlflow_project_env python modelling.py
+      - name: Run training script
+        shell: bash -l {0}
+        run: |
+          conda activate mlflow_project_env
+          python MLProject/modelling.py
 
-      - name: Upload MLflow artifacts
-        if: always()
+      - name: Upload MLflow artifacts (mlruns)
         uses: actions/upload-artifact@v4
         with:
           name: mlflow-artifacts
-          path: MLProject/mlruns
+          path: mlruns
+          if-no-files-found: error
