@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
 # Memuat dataset
-dataset_path = 'namadataset_preprocessing/Mental_Health_and_Social_Media_Balance_No_Outlier.csv'
+dataset_path = "MLProject/namadataset_preprocessing/Mental_Health_and_Social_Media_Balance_No_Outlier.csv"
 df = pd.read_csv(dataset_path)
 
 # Label Encoding untuk kolom 'Gender' dan kolom lainnya yang kategorikal
