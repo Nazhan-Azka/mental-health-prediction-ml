@@ -1,6 +1,6 @@
 # Workflow-CI (MLflow Project)
 
-- Jalankan ulang training otomatis dengan `mlflow run Workflow-CI -P test_size=0.2`.
-- Workflow GitHub Actions berada di `.workflow/ci-mlflow.yml` dan memanggil perintah di atas pada setiap push/dispatch.
-- Data preprocessing disalin dari eksperimen ke `winequality_preprocessing`. Update folder ini bila ada preprocessing baru.
+- Proyek MLflow ada di folder `MLProject` (spec `MLProject`, environment `conda.yaml`, script `modelling.py`, dan dataset `namadataset_preprocessing/`).
+- Jalankan lokal: `cd MLProject && conda env create -f conda.yaml && conda run -n mlflow_project_env python modelling.py`.
+- Workflow GitHub Actions berada di `.github/workflows/ci-mlflow.yml`; trigger push/PR/main dan `workflow_dispatch`, menjalankan training lalu mengunggah artefak MLflow.
 - Docker Hub: lengkapi `dockerhub_link.txt` jika image sudah dipublikasikan (opsional untuk level advanced).
